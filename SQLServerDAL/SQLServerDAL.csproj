@@ -45,6 +45,7 @@
     <Compile Include="BBSSection.cs" />
     <Compile Include="BBSTopic.cs" />
     <Compile Include="BBSUsers.cs" />
+    <Compile Include="DataConvertJson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PubConstant.cs" />
   </ItemGroup>

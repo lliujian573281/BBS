@@ -23,7 +23,7 @@
             $.ajax({
                 type: "Post",
                 url: "ashx/zhuce.ashx",
-                    
+                     
                 data: {
                     "Uname": txtUname, "UPassword": txtUPassword, "UEmail": txtUEmail, "UBirthday": txtUBirthday, "Usex": txtUsex,
                     "UClass": txtUClass, "UStatement": txtUStatement, "URegDate": txtURegDate, "UState": txtUState, "UPoint": txtUPoint

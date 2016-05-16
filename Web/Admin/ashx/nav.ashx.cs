@@ -8,7 +8,7 @@ namespace Web.Admin.ashx
     /// <summary>
     /// nav 的摘要说明
     /// </summary>
-    public class nav : IHttpHandler
+    public class nav : IHttpHandler,System.Web.SessionState.IRequiresSessionState
     {
         public void ProcessRequest(HttpContext context)
         {

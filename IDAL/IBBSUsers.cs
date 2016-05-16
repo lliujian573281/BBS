@@ -19,7 +19,7 @@ namespace BBS.IDAL
         /// <summary>
         /// 注册
         /// </summary>      
-        int zhuce(string a, string b, string c, string d, bool e, int f, string g, string h, int i, int j);
+        int zhuce(string a, string b, string c, string d, bool e,  string g, string h);
 
 
         #region  成员方法

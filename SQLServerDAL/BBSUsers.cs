@@ -37,7 +37,7 @@ namespace BBS.SQLServerDAL
 
 
         //注册
-        public int zhuce(string a, string b, string c, string d, bool e, int f, string g, string h, int i, int j)
+        public int zhuce(string a, string b, string c, string d, bool e, string g, string h)
         {
 
             StringBuilder strSql = new StringBuilder();
@@ -54,9 +54,13 @@ namespace BBS.SQLServerDAL
 
             else
             {
-                StringBuilder strsql = new StringBuilder();
-                strsql.Append("insert  into BBSUsers ");
-                strsql.Append(" values {0},'{1}','{2}','{3}','{4}',{5},{6},'{7}','{8}',{9},{10},1,a,b,c,d,e,f,g,h,i,j");
+                //StringBuilder strsql = new StringBuilder();
+                int n = 0;
+                if (e == true) { n = 1; }
+                string  strsql=string .Format(@"insert  into BBSUsers 
+                                    values 
+                                    ('{0}','{1}','{2}','{3}','{4}',{5},{6},'{7}','{8}',{9},{10})"
+                                    , 1,a,b,c,d,n,0,g,h,0,0 );
 
                 object ob = DbHelperSQL.GetSingle(strsql.ToString());
                 if (ob == null)

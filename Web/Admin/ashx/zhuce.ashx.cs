@@ -23,16 +23,15 @@ namespace Web.Admin.ashx
             string txtUEmail = context.Request.Form["ermail"];
             string txtUBirthday = context.Request.Form["ubirthday"];
             string txtUsex1 = context.Request.Form["ubirthday"];bool txtUsex = true; if (txtUsex1 == "女") { txtUsex = false; }
-            int txtUClass =int.Parse( context.Request.Form["uclass"]);
+           
             string txtUStatement = context.Request.Form["ustatement"];
             string txtURegDate = context.Request.Form["uregdate"];
-            int txtUState =int.Parse( context.Request.Form["ustate"]);
-            int txtUPoint =int.Parse( context.Request.Form["upoint"]);
+         
 
             
 
             BBS.BLL.BBSUsers bll = new BBS.BLL.BBSUsers();
-            int n = bll.zhuce(txtUname, txtUPassword, txtUEmail, txtUBirthday, txtUsex, txtUClass, txtUStatement, txtURegDate, txtUState, txtUPoint);
+            int n = bll.zhuce(txtUname, txtUPassword, txtUEmail, txtUBirthday, txtUsex,  txtUStatement, txtURegDate);
             //返回单个文字信息
             if (n > 0)
             {

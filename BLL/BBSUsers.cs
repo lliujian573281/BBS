@@ -30,9 +30,9 @@ namespace BBS.BLL
 
 
         //注册
-        public int zhuce(string a, string b, string c, string d, bool e, int f, string g, string h, int i, int j)
+        public int zhuce(string a, string b, string c, string d, bool e, string g, string h)
         {
-            return dal.zhuce(a, b, c, d, e, f, g, h, i, j);
+            return dal.zhuce(a, b, c, d, e, g, h);
         }
 
         #region  BasicMethod

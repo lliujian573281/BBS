@@ -1,0 +1,15 @@
+﻿.page-header-1 a:before {
+  content: "ss";
+  background: #c32934;
+  color:  #c32934;
+  display: inline-block;
+  vertical-align:top;
+  margin-right: 10px;
+  margin-left: 10px;
+	}
+
+.jumbotron {height:auto;padding:10px;background-color:white;}
+.jumbotron img {width:100%}
+@media(max-width:768px) {
+.jumbotron{height:150px;}
+}

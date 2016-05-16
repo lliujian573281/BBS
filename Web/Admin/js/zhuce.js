@@ -7,11 +7,10 @@
         var txtUEmail = $("#ermail").val();
         var txtUBirthday = $("#ubirthday").val();
         var txtUsex = true;
-        var txtUClass = $("#uclass").val();
+       
         var txtUStatement = $("#ustatement").val();
         var txtURegDate = $("#uregdate").val();
-        var txtUState = $("#ustate").val();
-        var txtUPoint = $("#upoint").val();
+   
 
 
         var Usex = $('input:radio[name="usex"]:checked').val();
@@ -20,7 +19,7 @@
         }
         
 
-        if ("" != txtUname && "" != txtUPassword && "" != txtUEmail && "" != txtUBirthday && "" != txtUsex && "" != txtUClass && "" != txtUStatement && "" != txtURegDate && "" != txtUState && "" != txtUPoint) {   //简单的验证放在客户端，减少服务器压力
+        if ("" != txtUname && "" != txtUPassword && "" != txtUEmail && "" != txtUBirthday && "" != txtUsex && "" != txtUStatement && "" != txtURegDate ) {   //简单的验证放在客户端，减少服务器压力
             //利用post方式向服务器请求数据 
             $.ajax({
                 type: "Post",
@@ -28,7 +27,7 @@
                      
                 data: {
                     "Uname": txtUname, "UPassword": txtUPassword, "UEmail": txtUEmail, "UBirthday": txtUBirthday, "Usex": txtUsex,
-                    "UClass": txtUClass, "UStatement": txtUStatement, "URegDate": txtURegDate, "UState": txtUState, "UPoint": txtUPoint
+                    "UStatement": txtUStatement, "URegDate": txtURegDate
                 },
                 dataType: "text",
                 success: function (data) {

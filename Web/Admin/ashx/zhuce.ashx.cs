@@ -29,7 +29,7 @@ namespace Web.Admin.ashx
             int txtUState =int.Parse( context.Request.Form["ustate"]);
             int txtUPoint =int.Parse( context.Request.Form["upoint"]);
 
-    
+            
 
             BBS.BLL.BBSUsers bll = new BBS.BLL.BBSUsers();
             int n = bll.zhuce(txtUname, txtUPassword, txtUEmail, txtUBirthday, txtUsex, txtUClass, txtUStatement, txtURegDate, txtUState, txtUPoint);

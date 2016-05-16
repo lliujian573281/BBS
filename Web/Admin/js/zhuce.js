@@ -6,17 +6,19 @@
         var txtUPassword = $("#upassword").val();
         var txtUEmail = $("#ermail").val();
         var txtUBirthday = $("#ubirthday").val();
-        var txtUsex = $("#usex").val();
+        var txtUsex = true;
         var txtUClass = $("#uclass").val();
         var txtUStatement = $("#ustatement").val();
         var txtURegDate = $("#uregdate").val();
         var txtUState = $("#ustate").val();
         var txtUPoint = $("#upoint").val();
 
-        if (txtUsex == "女") {
+
+        var Usex = $('input:radio[name="usex"]:checked').val();
+        if (Usex == "女") {
             txtUsex = false;
         }
-        else { txtUsex = true;}
+        
 
         if ("" != txtUname && "" != txtUPassword && "" != txtUEmail && "" != txtUBirthday && "" != txtUsex && "" != txtUClass && "" != txtUStatement && "" != txtURegDate && "" != txtUState && "" != txtUPoint) {   //简单的验证放在客户端，减少服务器压力
             //利用post方式向服务器请求数据 
@@ -45,6 +47,18 @@
             alert("输入非法！");
 
         }
+    });
+
+    $("#BtnCancel").click(function () {
+        $("#uname").val('');
+        $("#upassword").val('');
+        $("#ermail").val('');
+        $("#ubirthday").val('');
+        $("#uclass").val('');
+        $("#ustatement").val('');
+        $("#uregdate").val('');
+        $("#ustate").val('');
+        $("#upoint").val('');
     });
 
 });

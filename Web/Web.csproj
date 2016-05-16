@@ -139,8 +139,10 @@
     <Content Include="Admin\banner.html" />
     <Content Include="Admin\carbbs.html" />
     <Content Include="Admin\choosecar.html" />
+    <Content Include="Admin\exit.html" />
     <Content Include="Admin\footer.html" />
     <Content Include="Admin\index.html" />
+    <Content Include="Admin\js\exit.js" />
     <Content Include="Admin\js\login.js" />
     <Content Include="Admin\js\nav.js" />
     <Content Include="Admin\js\tiezilist.js" />
@@ -171,6 +173,7 @@
     <Content Include="Admin\ashx\login.ashx" />
     <Content Include="Admin\ashx\nav.ashx" />
     <Content Include="Admin\ashx\zhuce.ashx" />
+    <Content Include="Admin\ashx\exit.ashx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="images\1262147586.jpg" />
     <Content Include="images\1262147611.jpg" />
@@ -219,12 +222,16 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.pagination1.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\WebForms\jquery.pagination1.js" />
     <Content Include="Scripts\WebForms\Menu.js" />
     <Content Include="Scripts\WebForms\MenuStandards.js" />
     <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
@@ -267,6 +274,9 @@
   <ItemGroup>
     <Compile Include="Admin\ashx\ArticleList.ashx.cs">
       <DependentUpon>ArticleList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ashx\exit.ashx.cs">
+      <DependentUpon>exit.ashx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ashx\getNum.ashx.cs">
       <DependentUpon>getNum.ashx</DependentUpon>

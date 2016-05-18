@@ -14,7 +14,7 @@ namespace Common
 		/// </summary>
 		/// <param name="key"></param>
 		/// <returns></returns>
-		public static string GetConfigString(string key)
+		public  static string GetConfigString(string key)
 		{
             string CacheKey = "AppSettings-" + key;
             object objModel = DataCache.GetCache(CacheKey);

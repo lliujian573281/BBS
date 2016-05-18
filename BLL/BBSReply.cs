@@ -11,7 +11,7 @@ namespace BBS.BLL
 	/// BBSReply
 	/// </summary>
 	public partial class BBSReply
-	{    
+	{     
 		private readonly IBBSReply dal=DataAccess.CreateBBSReply();
 		public BBSReply()
 		{}
